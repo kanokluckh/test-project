@@ -1,27 +1,31 @@
+CTH2406-00069!VIPERFISH|PLATFORMS-SERVER!2024-02-08 18:48:31!TPU_PCIE_DRIVER_OPEN_ERROR!Failing Child Step='pci_throughput_aer_with_retry - Diag';generic::failed_precondition: open(/dev/vfio/137): Device or resource busy: Device or resource busy; Couldn't open iommu group /dev/vfio/!NDF!Change slot!510008:SYSTEM TEST
+CTH2406-00565!VIPERFISH|PLATFORMS-SERVER!2024-02-12 02:24:46!STEP_TIMEOUT_ERROR!Timeout occurred while executing ssh -o ServerAliveInterval=600 -tt root@10.0.0.12 'ulimit -Hn 1048576; ulimit -Sn 1048576; gcontain enter /; /fish/voodoo/jobhandlers/viperfishist_jobhandler_stan!NDF!Retest as is!510008:SYSTEM TEST
+CTH2344-00167!VIPERFISH|PLATFORMS-SERVER!2024-02-06 03:33:41!VF_SI_ICI_SERDES_FAIL!OSFP2!NDF!Change OSFP2 and retest!510008:SYSTEM TEST
 CTH2406-11270!VIPERLITE POD|PLATFORMS-SERVER!2024-02-15 14:11:48!PCIE_VLC0_WIDTH!value='x4' lower_limit='x8' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02608!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:23:18!VF_SI_ICI_SERDES_FAIL!OSFP2!NDF!Swap OSFP2 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2406-00910!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:40:49!PCIE_VFC3_WIDTH!value='x8' lower_limit='x16' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-01582!VIPERFISH|PLATFORMS-SERVER!2024-02-15 17:32:40!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC3:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03065!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:51:26!fish_firmware_missing!Failed to find vfc3 devpath /phys/PE0/IO0/CDFP/DOWNLINK/VFC3:device:asic in firmware list.!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02839!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:23:18!VOODOO_PARSING_ERROR!Failed to parse 1 lines from Voodoo output at line number(s): [1].!NDF!Retest as is!510008:SYSTEM TEST
 CTH2407-02956!VIPERFISH|PLATFORMS-SERVER!2024-02-15 20:32:04!VF_SI_ICI_SERDES_FAIL!OSFP15!NDF!Swap OSFP15 to OSFP0 and retest!510008:SYSTEM TEST
 CTH2407-02794!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:23:18!VF_SI_ICI_SERDES_FAIL!OSFP7!NDF!Swap OSFP7 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-02813!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:23:18!VF_SI_ICI_SERDES_FAIL!OSFP11!NDF!Swap OSFP11 to OSFP0 and retest!510008:SYSTEM TEST
-CTH2407-02608!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:23:18!VF_SI_ICI_SERDES_FAIL!OSFP2!NDF!Swap OSFP2 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-02964!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:01:38!OSFP_MISSING!Failed to find phys/PE0/IO0/CDFP/DOWNLINK:device:osfp_mgmt_7 in hardware parts.!NDF!Swap OSFP7 to OSFP14!510008:SYSTEM TEST
+CTH2407-03185!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:36:48!pcie_vfc0_width!value='x8' lower_limit='x16' upper_limit=''!NDF!Swap CDFP0 to CDFP1 mnaual confirm still failed change slot confirm!510008:SYSTEM TEST
 CTH2407-11476!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 00:50:19!GBMC_INTERFACE_CONFIGURE_ERROR!Failed to configure the network interface between host and gBMC;(TimeoutError) Timeout while trying to set interface bmc_usb0;(HostCommandError) Send command failure: ip link set usb0 name bmc_us!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03116!VIPERFISH|PLATFORMS-SERVER!2024-02-15 21:30:45!MISSING_MEASUREMENT!Could not find measurements for 1 spec(s).!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-03448!VIPERFISH|PLATFORMS-SERVER!2024-02-15 23:10:28!MISSING_MEASUREMENT!Could not find measurements for 1 spec(s).!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03116!VIPERFISH|PLATFORMS-SERVER!2024-02-15 21:30:45!MISSING_MEASUREMENT!Could not find measurements for 1 spec(s).!NDF!Change slot!510008:SYSTEM TEST
 CTH2343-00408!VIPERFISH|PLATFORMS-SERVER!2024-02-15 22:45:23!vf_vf_randhammer_execution_error!Failing Child Step='hbm_randhammer - vf-randhammer';generic::deadline_exceeded: Command "/export/hda3/tests/vf_randhammer/vf_randhammer.runfiles/google3/platforms/deepsea/software/vxc/vfc/tools/v!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02137!VIPERFISH|PLATFORMS-SERVER!2024-02-16 02:29:01!flow_rate_0.3_gpm!value='0.36' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02985!VIPERFISH|PLATFORMS-SERVER!2024-02-15 21:00:29!stethoscope_start_error!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - Start Stethoscope';Error obtaining SVS voltages for Stethoscope: generic::internal: failed to parse svs voltage: strconv.ParseFloat: parsing!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-03057!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:58:25!flow_rate_0.3_gpm!value='0.34' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02125!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:51:57!flow_rate_0.3_gpm!value='0.98' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03065!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:51:26!fish_firmware_missing!Failed to find vfc3 devpath /phys/PE0/IO0/CDFP/DOWNLINK/VFC3:device:asic in firmware list.!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03094!VIPERFISH|PLATFORMS-SERVER!2024-02-16 02:04:01!VF_SI_ICI_SERDES_FAIL!OSFP10!NDF!Swap OSFP10 to OSFP0!510008:SYSTEM TEST
+CTH2407-03094!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:03:59!VF_SI_ICI_SERDES_FAIL!OSFP10!NDF!Swap OSFP10 to OSFP0!510008:SYSTEM TEST
 CTH2407-03394!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:57:27!VF_SI_ERROR!Failing Child Step='vfsi_cdmii - Diag';vf_si Empty csv file!NDF!Swap OSFP4 to OSFP15 and retest!510008:SYSTEM TEST
+CTH2407-02988!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:45:37!VF_SI_ICI_SERDES_FAIL!OSFP6!NDF!Swap OSFP6 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-02989!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:42:38!VF_SI_ICI_SERDES_FAIL!OSFP6!NDF!Swap OSFP6 to OSFP15!510008:SYSTEM TEST
 CTH2407-03190!VIPERFISH|PLATFORMS-SERVER!2024-02-16 02:00:40!VF_SI_ICI_SERDES_FAIL!OSFP2!NDF!Swap OSFP2 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-02512!VIPERFISH|PLATFORMS-SERVER!2024-02-15 23:54:08!VF_SI_ICI_SERDES_FAIL!OSFP12!NDF!Swap OSFP2 to OSFP12 (APF232610406DK)!510008:SYSTEM TEST
-CTH2407-03185!VIPERFISH|PLATFORMS-SERVER!2024-02-15 19:36:48!pcie_vfc0_width!value='x8' lower_limit='x16' upper_limit=''!NDF!Swap CDFP0 to CDFP1 mnaual confirm still failed change slot confirm!510008:SYSTEM TEST
 CTH2407-01589!VIPERFISH|PLATFORMS-SERVER!2024-02-15 21:04:43!VF_SI_ICI_SERDES_FAIL!OSFP13!NDF!Swap OSFP13 to OSFP0 (APF23391071T9G)!510008:SYSTEM TEST
 CTH2407-02965!VIPERFISH|PLATFORMS-SERVER!2024-02-15 21:41:45!VF_SI_ICI_SERDES_FAIL!OSFP3!NDF!Swap OSFP3 to OSFP11  retest (APF23131042V1G)!510008:SYSTEM TEST
 CTH2349-14437!VIPERLITE POD|PLATFORMS-SERVER!2024-02-15 21:55:33!SFC_UNEXPECTED_EXCEPTION!'heatsink_4'!NDF!Wait ENG.Test check!510008:SYSTEM TEST
@@ -30,29 +34,30 @@ CTH2407-03050!VIPERFISH|PLATFORMS-SERVER!2024-02-15 23:26:22!VF_SI_ICI_SERDES_FA
 CTH2407-03029!VIPERFISH|PLATFORMS-SERVER!2024-02-16 00:01:44!VF_SI_ICI_SERDES_FAIL!OSFP13!NDF!Swap OSFP13 to OSFP7 (APF23391071R67)!510008:SYSTEM TEST
 CTH2407-03080!VIPERFISH|PLATFORMS-SERVER!2024-02-15 23:51:26!VF_SI_ERROR!Failing Child Step='vfsi_cdmii - Diag';vf_si Empty csv file!NDF!Swap OSFP9 to OSFP0 (APF23391070MKJ)!510008:SYSTEM TEST
 CTH2407-11470!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 04:32:07!STETHOSCOPE_STOP_ERROR!Failing Child Step='pcm_burnin - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02971!VIPERFISH|PLATFORMS-SERVER!2024-02-16 03:48:39!SENSOR_READ_ERROR!(BaseTrayError) Error while reading the sensors list;(IpmiToolError) Error while executing the read_sensors command;(HostCommandError) Send command failure: /usr/bin/ipmitool sensor (error: Error!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02971!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:06:21!SENSOR_READ_ERROR!(BaseTrayError) Error while reading the sensors list;(IpmiToolError) Error while executing the read_sensors command;(HostCommandError) Send command failure: /usr/bin/ipmitool sensor (error: Error!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02126!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:29:18!PCIE_VFC3_WIDTH!value='x8' lower_limit='x16' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-01593!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:58:14!pcie_vfc0_width!value='x8' lower_limit='x16' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02105!VIPERFISH|PLATFORMS-SERVER!2024-02-16 02:26:34!pcie_vfc0_width!value='x8' lower_limit='x16' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-10874!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 03:12:17!TPU_THERMAL_EXECUTION_ERROR!Failing Child Step='thermal_impedance_with_retry - tpu-thermal-execution';Got the following error when running workload tdp :;vx_power did not finish within required time. rc=-6 STDOUT:;;STDERR:;!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-11540!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:17:00!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot!510008:SYSTEM TEST
 CTH2405-03921!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:44:38!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC1:device:asic!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02229!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:49:06!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC1:device:asic!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-01616!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:38:35!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC3:device:asic!NDF!Change slot!510008:SYSTEM TEST
-CTH2403-02365!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:31:14!flow_rate_0.6_gpm!value='0.45' lower_limit='0.54' upper_limit='0.66'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02236!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:49:59!flow_rate_0.3_gpm!value='1.0' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02229!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:59!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC1:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-01616!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:06!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC3:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2403-02365!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:35!flow_rate_0.6_gpm!value='0.45' lower_limit='0.54' upper_limit='0.66'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02236!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:59:08!flow_rate_0.3_gpm!value='1.0' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03264!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:22:24!flow_rate_0.3_gpm!value='0.36' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-01604!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:43:51!flow_rate_0.3_gpm!value='0.35' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02162!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:44:29!flow_rate_0.3_gpm!value='0.39' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02279!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:51:18!flow_rate_0.3_gpm!value='0.42' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-01930!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:39:50!flow_rate_0.3_gpm!value='0.42' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02279!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:25!flow_rate_0.3_gpm!value='0.42' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-01930!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:24:35!flow_rate_0.3_gpm!value='0.42' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-02198!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:29:07!flow_rate_0.3_gpm!value='0.87' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-01603!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:43:35!flow_rate_0.3_gpm!value='0.49' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02022!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:40:43!flow_rate_0.3_gpm!value='0.44' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03180!VIPERFISH|PLATFORMS-SERVER!2024-02-16 03:07:34!flow_rate_0.3_gpm!value='0.19' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03093!VIPERFISH|PLATFORMS-SERVER!2024-02-16 03:15:00!VX_POWER_TIMEOUT!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - vx-power-execution';vx_power binary failed to finish in alloted time (waited for 10m30s)!NDF!Change slot!510008:SYSTEM TEST
-CTH2403-01927!VIPERFISH|PLATFORMS-SERVER!2024-02-16 03:09:51!vx_power_invalid_hw_info!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - vx-power-test-initialization';generic::failed_precondition: Cannot perform indirect operations because FW might not be running. FW CPU state!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-00682!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:35:10!flow_rate_0.3_gpm!value='0.95' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-00683!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:35:59!flow_rate_0.3_gpm!value='0.72' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02022!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:47!flow_rate_0.3_gpm!value='0.44' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03180!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:14:06!flow_rate_0.3_gpm!value='0.19' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03093!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:20:16!VX_POWER_TIMEOUT!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - vx-power-execution';vx_power binary failed to finish in alloted time (waited for 10m30s)!NDF!Change slot!510008:SYSTEM TEST
+CTH2403-01927!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:59:25!vx_power_invalid_hw_info!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - vx-power-test-initialization';generic::failed_precondition: Cannot perform indirect operations because FW might not be running. FW CPU state!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-00682!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:57:29!flow_rate_0.3_gpm!value='0.95' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-00683!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:07:21!flow_rate_0.3_gpm!value='0.72' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-10568!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 03:07:06!VL_SI_ICI_SERDES_FAIL!Failing Child Step='ici_vl_si_pv_cdmii_le - vlsi';BER threshold was exceeded on PE3 VLC0 Port 1 Lane 1. Actual: 0.00011599999999999999, Threshold: 6.005e-07!NDF!Replace OSFP0!510008:SYSTEM TEST
 CTH2407-11371!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 02:41:59!VXC_CONFIG_HBM_FAILED!Failing Child Step='hbm_qc_delay - vcore=0.80,vddqa=1.16,fan_pwm=-1.00,hbm_config=Samsung_3200Mbps_QCn1_QCoff0.textproto';VxC HBM Configuration failed: Error encountered when configuring 0: ['/ex!NDF!Change slot and retest!510008:SYSTEM TEST
 CTH2407-10795!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 02:44:58!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot and retest!510008:SYSTEM TEST
@@ -61,33 +66,32 @@ CTH2407-03277!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:19:34!VF_SI_ERROR!Failing
 CTH2407-02115!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:32:35!VF_SI_ICI_SERDES_FAIL!OSFP4!NDF!Swap OSFP4 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-03141!VIPERFISH|PLATFORMS-SERVER!2024-02-16 02:32:45!VF_SI_ICI_SERDES_FAIL!OSFP7!NDF!Swap OSFP7 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2405-04500!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:54:25!VF_SI_ICI_SERDES_FAIL!OSFP13!NDF!Swap OSFP13 to OSFP0 and retest!510008:SYSTEM TEST
-CTH2407-02988!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:45:37!VF_SI_ICI_SERDES_FAIL!OSFP6!NDF!Swap OSFP6 to OSFP15 and retest!510008:SYSTEM TEST
+CTH2407-03218!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:27:14!VF_SI_ICI_SERDES_FAIL!OSFP6!NDF!Swap OSFP6 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-03223!VIPERFISH|PLATFORMS-SERVER!2024-02-16 04:39:58!VF_SI_ICI_SERDES_FAIL!OSFP9!NDF!Swap OSFP9 to OSFP0 and retest!510008:SYSTEM TEST
 CTH2407-11376!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:53:24!GBMC_INTERFACE_CONFIGURE_ERROR!Failed to configure the network interface between host and gBMC;(TimeoutError) Timeout while trying to set interface bmc_usb0;(HostCommandError) Send command failure: ip link set usb0 name bmc_us!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03310!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:55:16!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC2:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03310!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:21!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC2:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02240!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:07:26!pcie_vfc0_width!value='x8' lower_limit='x16' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-11473!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:49:25!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-11311!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:30:11!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-11643!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:24:34!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-11633!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:53:45!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-11419!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:39:53!STEP_TIMEOUT_ERROR!Timeout occurred while executing ssh -o ServerAliveInterval=600 -tt root@10.0.0.4 'ulimit -Hn 1048576; ulimit -Sn 1048576; gcontain enter /; /fish/voodoo/jobhandlers/viperliteist_jobhandler_stand!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02171!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:12:33!EXCESSIVE_VX_POWER_THERMAL_THROTTLE!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-thermal-throttle' has 1 violated entries during vx-power-tdp. Violated entries: throttle-rate!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03264!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:54:21!flow_rate_0.3_gpm!value='0.36' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02166!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:59:05!flow_rate_0.3_gpm!value='0.38' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-03489!VIPERFISH|PLATFORMS-SERVER!2024-02-16 05:58:05!flow_rate_0.3_gpm!value='0.37' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02242!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:14:10!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC1:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02258!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:05!ping_gbmc_retry_from_host_tray_fail!Failed to ping fe80::a0d5:9dff:fe6c:6e6a%gbmcbr from the host tray!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02171!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:07:53!EXCESSIVE_VX_POWER_THERMAL_THROTTLE!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-thermal-throttle' has 1 violated entries during vx-power-tdp. Violated entries: throttle-rate!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02241!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:09:22!flow_rate_0.3_gpm!value='0.36' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02166!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:57:48!flow_rate_0.3_gpm!value='0.38' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03489!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:02:37!flow_rate_0.3_gpm!value='0.37' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-01594!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:29:31!EXCESSIVE_VX_POWER_RUN_STATUS!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-run-status' has 1 violated entries during vx-power-tdp. Violated entries: UNKNOWN_0!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02185!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:16:12!EXCESSIVE_VX_POWER_RUN_STATUS!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-run-status' has 1 violated entries during vx-power-tdp. Violated entries: UNKNOWN_0!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-00690!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:13:50!flow_rate_0.3_gpm!value='0.39' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02207!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:05:43!flow_rate_0.3_gpm!value='0.43' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
-CTH2407-02258!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:10:25!ping_gbmc_retry_from_host_tray_fail!Failed to ping fe80::a0d5:9dff:fe6c:6e6a%gbmcbr from the host tray!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02185!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:59:23!EXCESSIVE_VX_POWER_RUN_STATUS!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-run-status' has 1 violated entries during vx-power-tdp. Violated entries: UNKNOWN_0!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-00690!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:38!flow_rate_0.3_gpm!value='0.39' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02207!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:55!flow_rate_0.3_gpm!value='0.43' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
 CTH2407-10369!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:29:30!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot and retest!510008:SYSTEM TEST
 CTH2407-10606!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:28:53!STETHOSCOPE_STOP_ERROR!Failing Child Step='electrical_design_power_droop_validation - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!NDF!Change slot and retest!510008:SYSTEM TEST
+CTH2407-11292!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 07:23:57!VL_VL_MEMORY_FULL_BANDWIDTH_READ_CORRECTNESS_EXECU!Failing Child Step='hbm_full_bandwidth_read_correctness - hbm_full_bandwidth_read_correctness';generic::internal: /export/hda3/tests/vl_memory_full_bandwidth_read_correctness/vl_memory_full_bandw!NDF!Change slot and retest!510008:SYSTEM TEST
 CTH2407-10599!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:23:47!ADP1050_READ_ERROR!(I2cDeviceError) Error while processing register outa-rising-and-falling-edge-timing-lsbs;(I2cToolsError) Error while executing the i2ctransfer command;(HostCommandError) Send command failure: /u!NDF!Change slot and retest!510008:SYSTEM TEST
 CTH2407-10927!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:22:54!VL_SI_ICI_SERDES_FAIL!Failing Child Step='ici_vl_si_pv_cdmii_le - vlsi';BER threshold was exceeded on PE3 VLC0 Port 2 Lane 0. Actual: 2.24e-06, Threshold: 6.005e-07!NDF!Replace OSFP1!510008:SYSTEM TEST
 CTH2407-03487!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:32:02!VF_SI_ERROR!Failing Child Step='vfsi_cdmii - Diag';vf_si Empty csv file!NDF!Swap OSFP12 to OSFP0 and retest!510008:SYSTEM TEST
 CTH2407-03253!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:32:18!VF_SI_ICI_SERDES_FAIL!OSFP5!NDF!Swap OSFP5 to OSFP15 and retest!510008:SYSTEM TEST
+CTH2407-02191!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:11:40!VF_SI_ICI_SERDES_FAIL!OSFP13!NDF!Swap OSFP13 to OSFP0 and retest!510008:SYSTEM TEST
 CTH2407-03484!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:33:47!VF_SI_ICI_SERDES_FAIL!OSFP0!NDF!Swap OSFP0 to OSFP15 and retest!510008:SYSTEM TEST
 CTH2407-03427!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:33:50!VF_SI_ICI_SERDES_FAIL!OSFP6!NDF!Swap OSFP6 to OSFP15 and retest!510008:SYSTEM TEST
-CTH2407-03218!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:27:14!VF_SI_ICI_SERDES_FAIL!OSFP6!NDF!Swap OSFP6 to OSFP15 and retest!510008:SYSTEM TEST
-CTH2344-00167!VIPERFISH|PLATFORMS-SERVER!2024-02-06 03:33:41!VF_SI_ICI_SERDES_FAIL!OSFP2!NDF!Change OSFP2 and retest!510008:SYSTEM TEST
-CTH2406-00069!VIPERFISH|PLATFORMS-SERVER!2024-02-08 18:48:31!TPU_PCIE_DRIVER_OPEN_ERROR!Failing Child Step='pci_throughput_aer_with_retry - Diag';generic::failed_precondition: open(/dev/vfio/137): Device or resource busy: Device or resource busy; Couldn't open iommu group /dev/vfio/!NDF!Change slot!510008:SYSTEM TEST
-CTH2406-00565!VIPERFISH|PLATFORMS-SERVER!2024-02-12 02:24:46!STEP_TIMEOUT_ERROR!Timeout occurred while executing ssh -o ServerAliveInterval=600 -tt root@10.0.0.12 'ulimit -Hn 1048576; ulimit -Sn 1048576; gcontain enter /; /fish/voodoo/jobhandlers/viperfishist_jobhandler_stan!NDF!Retest as is!510008:SYSTEM TEST
