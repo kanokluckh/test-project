@@ -1109,3 +1109,33 @@ CTH2406-71146!GHOSTLITE POD|PLATFORMS-SERVER!2024-02-16 06:04:22!tpu_power_execu
 CTH2403-04513!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:03:10!OSFP_MISSING!Failed to find phys/PE0/IO0/CDFP/DOWNLINK:device:osfp_mgmt_9 in hardware parts.!DB03!Dis PCBA to debug!510008:SYSTEM TEST
 CTH2407-10462!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 06:35:16!EXCESSIVE_VX_THERMAL_IMPEDANCE!Failing Child Step='thermal_impedance_with_retry - Diag';Attribute 'vx-thermal-impedance' has 1 violated entries. Violated entries: asic-thermal-impedance!DB03!Replace HS VLC3 [NTGFKZ235005948]!510008:SYSTEM TEST
 CTH2405-04798!VIPERFISH|PLATFORMS-SERVER!2024-02-16 01:12:29!STETHOSCOPE_STOP_ERROR!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - Stop Stethoscope';Error stopping Stethoscope: sensor data exceed thresholds or have no readings!DB03!Replace cable FAN0,FAN1!510008:SYSTEM TEST
+CTH2407-01930!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:24:35!flow_rate_0.3_gpm!value='0.42' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02229!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:59!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC1:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03180!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:14:06!flow_rate_0.3_gpm!value='0.19' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-00683!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:07:21!flow_rate_0.3_gpm!value='0.72' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-01616!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:06!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC3:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02240!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:07:26!pcie_vfc0_width!value='x8' lower_limit='x16' upper_limit=''!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02242!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:14:10!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC1:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-00690!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:38!flow_rate_0.3_gpm!value='0.39' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02207!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:55!flow_rate_0.3_gpm!value='0.43' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02971!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:06:21!SENSOR_READ_ERROR!(BaseTrayError) Error while reading the sensors list;(IpmiToolError) Error while executing the read_sensors command;(HostCommandError) Send command failure: /usr/bin/ipmitool sensor (error: Error!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02241!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:09:22!flow_rate_0.3_gpm!value='0.36' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02185!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:59:23!EXCESSIVE_VX_POWER_RUN_STATUS!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-run-status' has 1 violated entries during vx-power-tdp. Violated entries: UNKNOWN_0!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03489!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:02:37!flow_rate_0.3_gpm!value='0.37' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02022!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:47!flow_rate_0.3_gpm!value='0.44' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03310!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:21!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC2:device:asic!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02171!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:07:53!EXCESSIVE_VX_POWER_THERMAL_THROTTLE!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - tdp';Attribute 'vx-power-thermal-throttle' has 1 violated entries during vx-power-tdp. Violated entries: throttle-rate!NDF!Change slot!510008:SYSTEM TEST
+CTH2403-02365!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:35!flow_rate_0.6_gpm!value='0.45' lower_limit='0.54' upper_limit='0.66'!NDF!Change slot!510008:SYSTEM TEST
+CTH2403-01927!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:59:25!vx_power_invalid_hw_info!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - vx-power-test-initialization';generic::failed_precondition: Cannot perform indirect operations because FW might not be running. FW CPU state!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02166!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:57:48!flow_rate_0.3_gpm!value='0.38' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02236!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:59:08!flow_rate_0.3_gpm!value='1.0' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02279!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:58:25!flow_rate_0.3_gpm!value='0.42' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-11292!VIPERLITE POD|PLATFORMS-SERVER!2024-02-16 07:23:57!VL_VL_MEMORY_FULL_BANDWIDTH_READ_CORRECTNESS_EXECU!Failing Child Step='hbm_full_bandwidth_read_correctness - hbm_full_bandwidth_read_correctness';generic::internal: /export/hda3/tests/vl_memory_full_bandwidth_read_correctness/vl_memory_full_bandw!NDF!Change slot and retest!510008:SYSTEM TEST
+CTH2407-03093!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:20:16!VX_POWER_TIMEOUT!Failing Child Step='vf_tdp_thermal_impedance_retry_2 - vx-power-execution';vx_power binary failed to finish in alloted time (waited for 10m30s)!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-02191!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:11:40!VF_SI_ICI_SERDES_FAIL!OSFP13!NDF!Swap OSFP13 to OSFP0 and retest!510008:SYSTEM TEST
+CTH2407-03094!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:03:59!VF_SI_ICI_SERDES_FAIL!OSFP10!NDF!Swap OSFP10 to OSFP0!510008:SYSTEM TEST
+CTH2407-02258!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:23:05!ping_gbmc_retry_from_host_tray_fail!Failed to ping fe80::a0d5:9dff:fe6c:6e6a%gbmcbr from the host tray!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-03264!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:22:24!flow_rate_0.3_gpm!value='0.36' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2407-00682!VIPERFISH|PLATFORMS-SERVER!2024-02-16 06:57:29!flow_rate_0.3_gpm!value='0.95' lower_limit='0.27' upper_limit='0.33'!NDF!Change slot!510008:SYSTEM TEST
+CTH2405-03685!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:06:45!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC2:device:asic!DB03!Dis PCBA to debug!510008:SYSTEM TEST
+CTH2404-03701!VIPERFISH|PLATFORMS-SERVER!2024-02-16 07:06:59!PCIE_DEVPATH_MISSING!^/phys/PE\d/IO0/CDFP/DOWNLINK/VFC0:device:asic!DB03!Dis PCBA to debug!510008:SYSTEM TEST
